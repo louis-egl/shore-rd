@@ -2,71 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shore Rd Invitational</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1 id="site-title" onclick="scrollToSection('home')">Shore Rd Invitational</h1>
-    <p id="subtitle">Student Summer Touch</p>
-    <nav>
-      <a href="#register">Register</a>
-      <a href="#jerseys">Purchase Jerseys</a>
-      <a href="#draw">Draw</a>
-      <a href="#standings">Standings</a>
-    </nav>
+    <h1 id="site-title">Shore Rd Invitational</h1>
+    <div id="subtitle">Student Summer Touch League</div>
   </header>
 
-  <!-- Home/Gallery -->
-  <section id="home">
-    <div class="gallery-container">
-      <div class="gallery">
-        <img src="shore rd 1.jpg" alt="Shore Rd 1" />
-        <img src="shore rd 2.jpg" alt="Shore Rd 2" />
-        <img src="shore rd 3.jpg" alt="Shore Rd 3" />
-        <img src="shrd4.jpg" alt="Shore Rd 4" />
-        <img src="shrd5.jpg" alt="Shore Rd 5" />
-        <img src="shrd6.jpg" alt="Shore Rd 6" />
-        <img src="shrd7.jpg" alt="Shore Rd 7" />
-        <img src="shrdrd8.jpg" alt="Shore Rd 8" />
-        <img src="shrrdYES.jpg" alt="Shore Rd 9" />
-      </div>
-      <div class="gallery-caption">
-        Coming back to Orākei Domain — 7 weeks of touch in an expanded summer format.
-      </div>
-    </div>
-  </section>
+  <nav>
+    <a href="#register">Register</a>
+    <a href="#jerseys">Purchase Jerseys</a>
+    <a href="#draw">Draw</a>
+    <a href="#standings">Standings</a>
+  </nav>
 
-  <!-- Register -->
+  <div class="hero">
+    <img src="shrrdYES.jpg" alt="Touch game action" />
+    <div class="hero-text">
+      <h1>Coming back to Orākei Domain</h1>
+      <p>7 weeks of touch in an expanded summer format. Games every Wednesday, starting December 3rd. Full draw and jersey drop coming soon — stay tuned.</p>
+    </div>
+  </div>
+
   <section id="register">
     <h2>Register</h2>
-    <iframe src="https://docs.google.com/forms/d/e/13i2OtQcAFl_H1fUEn8ccSIhGMsivuKAuEn4Wg6j5Dak/viewform?embedded=true" loading="lazy">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/13i2OtQcAFl_H1fUEn8ccSIhGMsivuKAuEn4Wg6j5Dak/viewform?embedded=true">Loading…</iframe>
   </section>
 
-  <!-- Jerseys -->
   <section id="jerseys">
     <h2>Purchase Jerseys</h2>
     <p>Jerseys are coming soon — keep an eye out for our design reveal and ordering link.</p>
   </section>
 
-  <!-- Draw -->
   <section id="draw">
     <h2>Draw</h2>
     <p>Draw will be released closer to the first round — check back soon!</p>
   </section>
 
-  <!-- Standings -->
   <section id="standings">
     <h2>Standings</h2>
     <p>Standings will be updated weekly after each round — stay tuned.</p>
   </section>
-
-  <script>
-    function scrollToSection(id) {
-      const el = document.getElementById(id);
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
 </body>
 </html>
