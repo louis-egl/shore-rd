@@ -1,6 +1,6 @@
 /* style.css */
 
-/* Reset and base styles */
+/* Base styles */
 body {
   margin: 0;
   font-family: 'Georgia', serif;
@@ -10,28 +10,28 @@ body {
 
 header {
   background-color: #e8f5e9;
-  padding: 20px;
+  padding: 20px 0 10px 0;
   text-align: center;
   border-bottom: 1px solid #d0e6d2;
 }
 
 #site-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
   color: #115e59;
-  font-size: 2.5em;
+  font-size: 2.8em;
   margin: 0;
   cursor: pointer;
 }
 
 #subtitle {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Georgia', serif;
+  color: #4b5563;
   font-size: 1.2em;
-  color: #3b3b3b;
   margin-top: 5px;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 nav a {
@@ -47,17 +47,18 @@ nav a:hover {
 }
 
 .gallery-container {
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 1000px;
+  margin: 30px auto;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
 .gallery {
   display: flex;
-  width: 100%;
-  overflow: hidden;
+  animation: slide 32s infinite;
+  width: 800%;
 }
 
 .gallery img {
@@ -67,25 +68,47 @@ nav a:hover {
   flex: 0 0 100%;
 }
 
-.announcement {
+.gallery-caption {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   text-align: center;
-  padding: 40px 20px;
-  background-color: #f0fdf4;
-  border-top: 2px solid #cce3d6;
-}
-
-.announcement h2 {
-  color: #b91c1c;
-  font-size: 2.2em;
-  margin-bottom: 15px;
-  font-family: 'Playfair Display', serif;
-}
-
-.announcement p {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
   font-size: 1.2em;
-  max-width: 700px;
-  margin: auto;
+  color: #1f2937;
+  font-family: 'Georgia', serif;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  14% { transform: translateX(-100%); }
+  28% { transform: translateX(-200%); }
+  42% { transform: translateX(-300%); }
+  56% { transform: translateX(-400%); }
+  70% { transform: translateX(-500%); }
+  84% { transform: translateX(-600%); }
+  98% { transform: translateX(-700%); }
+  100% { transform: translateX(0%); }
+}
+
+.section {
+  padding: 40px 20px;
+  background-color: #fdfdf9;
+  border-top: 1px solid #e5e7eb;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #111827;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif;
+}
+
+.section p {
+  font-size: 1.1em;
   line-height: 1.6;
   color: #374151;
-  font-family: 'Georgia', serif;
 }
